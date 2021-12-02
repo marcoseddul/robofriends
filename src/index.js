@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import card from './card';
+import Card from './Card';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 import { robots } from './robots';
+
 ReactDOM.render(
   <div>
-    <card id={robots[0].id} name={robots[0].name} email={robots[0]}/>
-    <card id={robots[1].id} name={robots[1].name} email={robots[1]}/>
-    <card id={robots[2].id} name={robots[2].name} email={robots[2]}/>
-    <card id={robots[3].id} name={robots[3].name} email={robots[3]}/>
+    <Card id={robots[0].id} name={robots[0].name} email={robots[0]}/>
+    <Card id={robots[1].id} name={robots[1].name} email={robots[1]}/>
+    <Card id={robots[2].id} name={robots[2].name} email={robots[2]}/>
+    <Card id={robots[3].id} name={robots[3].name} email={robots[3]}/>
   </div>,
   document.getElementById('root')
 );
